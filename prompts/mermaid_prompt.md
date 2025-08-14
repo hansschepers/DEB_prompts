@@ -11,3 +11,4 @@ For mermaid diagrams, use rstudio-compatible syntax:
 - when using colored boxes in mermaid, use darker colors, since the text inside them is not standing out
 - subgraph labels (titles) should not contain any special characters, NOR have quotes
 
+- do not give a node / vertex to the "MATLAB native functions"

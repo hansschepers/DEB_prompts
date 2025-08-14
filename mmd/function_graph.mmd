@@ -1,0 +1,34 @@
+graph TD
+A[run_Equus_ferus_caballus] --> B[check_my_pet]
+A --> C[estim_options]
+A --> D[estim_pars]
+
+D --> E[mydata_Equus_ferus_caballus]
+D --> F[pars_init_Equus_ferus_caballus]
+D --> G[predict_Equus_ferus_caballus]
+
+E --> H[setweights]
+E --> I[addpseudodata]
+
+F --> J[addchem]
+
+G --> K[parscomp_st]
+G --> L[vars_pull]
+G --> M[tempcorr]
+G --> N[get_tx]
+G --> O[get_tp]
+G --> P[reprod_rate_foetus]
+G --> Q[get_tm_s]
+
+B --> R[MATLAB native functions]
+C --> R
+H --> R
+I --> R
+J --> R
+K --> R
+L --> R
+M --> R
+N --> R
+O --> R
+P --> R
+Q --> R

@@ -1,0 +1,24 @@
+graph TD
+    A[run_Sparus_aurata] --> B[check_my_pet]
+    A --> C[estim_options]
+    A --> D[estim_pars]
+    
+    D --> E[mydata_Sparus_aurata]
+    D --> F[pars_init_Sparus_aurata]
+    D --> G[predict_Sparus_aurata]
+    
+    E --> H[setweights]
+    E --> I[addpseudodata]
+    E --> J[C2K]
+    
+    F --> K[addchem]
+    
+    G --> L[parscomp_st]
+    G --> M[vars_pull]
+    G --> N[tempcorr]
+    G --> O[get_tj]
+    G --> P[initial_scaled_reserve]
+    G --> Q[ode45]
+    G --> R[get_tm_s]
+    
+    Q --> S[dget_aul]

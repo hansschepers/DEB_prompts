@@ -20,6 +20,7 @@
 
 # RStudio files
 .Rproj.user/
+DEB_prompts.Rproj
 
 # produced vignettes
 vignettes/*.html

@@ -1,0 +1,37 @@
+graph TD
+    A[run_Oncorhynchus_mykiss] --> B[check_my_pet]
+    A --> C[estim_options]
+    A --> D[estim_pars]
+    
+    D --> E[mydata_Oncorhynchus_mykiss]
+    D --> F[pars_init_Oncorhynchus_mykiss]
+    D --> G[predict_Oncorhynchus_mykiss]
+    
+    E --> H[setweights]
+    E --> I[addpseudodata]
+    E --> J[C2K]
+    
+    F --> K[addchem]
+    F --> L[parscomp_st]
+    
+    G --> M[parscomp_st]
+    G --> N[vars_pull]
+    G --> O[tempcorr]
+    G --> P[get_tj]
+    G --> Q[initial_scaled_reserve]
+    G --> R[ode45]
+    G --> S[reprod_rate_j]
+    G --> T[get_tm_j]
+    G --> U[scaled_power_j]
+    G --> V[maturity_j]
+    G --> W[predict_WL]
+    
+    R --> X[dget_aul]
+    R --> Y[dget_LUH]
+    R --> Z[dget_LEHR]
+    
+    W --> AA[get_tp]
+    W --> BB[ode45]
+    
+    BB --> CC[dget_LUH]
+    

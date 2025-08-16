@@ -3,16 +3,17 @@ Dynamic Energy Budget (DEB) modelling and parameter identification is done in th
 
 look at this matlab code, start with the file starting with 'run_'.
 
-Answer the following 5 questions (Question 1 in a mermaid artefact, Question 5 as in-stream markdown)
-when this model is run and fitted,
+Answer the following 6 questions (Question 2 in a mermaid artefact, Question 6 as in-stream markdown)
+when this model is run and fitted:
 
-1. Draw a function dependency graph in mermaid, of functions defined here (stop at the first matlab-native level) - mind the mermaid instructions above 
-2. Explain what numerical schemes are used: ode integration method, analytic expressions for certain phases of animal development? integrals? root finding for certain steps?
-3. Does the fit routine fit multiple data sets? Start answer with bare integer for "How many?", then elaborate a bit
-4. Does this simulation run actually consists of multiple models (algebraic, ODEs) stitched together? 
+1. Look up the latin species name for the organism, and give the English common name, as well as the genus, Family, Order, Class, Subphylum and Phylum), in a two column table.
+2. Draw a function dependency graph in mermaid, of functions defined here (stop at the first matlab-native level) - mind the mermaid instructions above 
+3. Explain what numerical schemes are used: ode integration method, analytic expressions for certain phases of animal development? integrals? root finding for certain steps?
+4. Does the fit routine fit multiple data sets? Start answer with bare integer for "How many?", then elaborate a bit
+5. Does this simulation run actually consists of multiple models (algebraic, ODEs) stitched together? 
 are these in series or in a DAG? 
 how are final states from one step translated into initial conditions for the next?
-5. Please characterize this model fitting setup by filling out the following table. 
+6. Please characterize this model fitting setup by filling out the following table. 
 For each category, provide specific numbers and details, do not abbreviate counts to something like "10+"
 
 

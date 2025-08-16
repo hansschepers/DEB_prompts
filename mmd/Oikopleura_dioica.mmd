@@ -1,0 +1,20 @@
+graph TD
+    A[run_Oikopleura_dioica] --> B[check_my_pet]
+    A --> C[estim_pars]
+    
+    C --> D[mydata_Oikopleura_dioica]
+    C --> E[pars_init_Oikopleura_dioica]
+    C --> F[predict_Oikopleura_dioica]
+    
+    D --> G[setweights]
+    D --> H[addpseudodata]
+    
+    E --> I[addchem]
+    
+    F --> J[parscomp_st]
+    F --> K[tempcorr]
+    F --> L[get_tb]
+    F --> M[cum_reprod]
+    F --> N[get_tm]
+    
+    F --> O[v2struct]

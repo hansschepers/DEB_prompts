@@ -24,7 +24,7 @@ when coding in R,
 - when creating the vector initial_states for a state `a`, make sure the par$steady_state_a or event$time is unnamed first! (or the name of the initial state will be corrupted).
 - Note that in ggplot2, the size` aesthetic for lines was deprecated, use `linewidth` instead
 
-- Please check that R object names are passed as arguments to a function, unless they are explicitly made to be global (which can be fine!)
+- Check that almost all functions get their info passed as arguments, unless there are globals on purpose (which can be fine!)
 
 
 IMPORTANT (read carefully, ask if not clear)

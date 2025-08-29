@@ -1,0 +1,26 @@
+graph TD
+    A[run_Solea_solea] --> B[check_my_pet]
+    A --> C[estim_options]
+    A --> D[estim_pars]
+    
+    D --> E[mydata_Solea_solea]
+    D --> F[pars_init_Solea_solea]
+    D --> G[predict_Solea_solea]
+    
+    E --> H[setweights]
+    E --> I[addpseudodata]
+    
+    F --> J[addchem]
+    
+    G --> K[parscomp_st]
+    G --> L[tempcorr]
+    G --> M[initial_scaled_reserve]
+    G --> N[get_tj]
+    G --> O[get_tm_s]
+    G --> P[reprod_rate_j]
+    G --> Q[reach_birth]
+    G --> R[ode45]
+    
+    R --> S[dget_aul]
+    R --> T[dget_ELH_pj]
+    R --> U[dget_ELH_wd]

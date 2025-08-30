@@ -1,0 +1,26 @@
+graph TD
+    A[run_Homo_sapiens] --> B[check_my_pet]
+    A --> C[estim_options]
+    A --> D[estim_pars]
+    
+    D --> E[mydata_Homo_sapiens]
+    D --> F[pars_init_Homo_sapiens]
+    D --> G[predict_Homo_sapiens]
+    
+    E --> H[setweights]
+    E --> I[addpseudodata]
+    E --> J[C2K]
+    
+    F --> K[parscomp_st]
+    F --> L[addchem]
+    
+    G --> M[parscomp_st]
+    G --> N[vars_pull]
+    G --> O[tempcorr]
+    G --> P[get_tx]
+    G --> Q[reprod_rate_foetus]
+    G --> R[get_tm_s]
+    G --> S[ode45]
+    G --> T[spline1]
+    
+    S --> U[get_EL]

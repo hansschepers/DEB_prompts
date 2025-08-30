@@ -1,0 +1,21 @@
+graph TD
+    A[run_Salmo_salar] --> B[check_my_pet]
+    A --> C[estim_options]
+    A --> D[estim_pars]
+    
+    D --> E[mydata_Salmo_salar]
+    D --> F[pars_init_Salmo_salar]
+    D --> G[predict_Salmo_salar]
+    
+    E --> H[setweights]
+    E --> I[addpseudodata]
+    E --> J[C2K]
+    
+    F --> K[addchem]
+    
+    G --> L[parscomp_st]
+    G --> M[vars_pull]
+    G --> N[tempcorr]
+    G --> O[get_tj]
+    G --> P[reprod_rate_j]
+    G --> Q[get_tm_s]

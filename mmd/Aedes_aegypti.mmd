@@ -1,0 +1,24 @@
+graph TD
+    A[run_Aedes_aegypti] --> B[check_my_pet]
+    A --> C[estim_options]
+    A --> D[estim_pars]
+    
+    D --> E[mydata_Aedes_aegypti]
+    D --> F[pars_init_Aedes_aegypti]
+    D --> G[predict_Aedes_aegypti]
+    
+    E --> H[setweights]
+    E --> I[addpseudodata]
+    E --> J[C2K]
+    
+    F --> K[addchem]
+    
+    G --> L[parscomp_st]
+    G --> M[vars_pull]
+    G --> N[tempcorr]
+    G --> O[get_tj_hax]
+    G --> P[initial_scaled_reserve]
+    G --> Q[get_tb]
+    G --> R[get_tm_s]
+    G --> S[cum_reprod_j]
+    G --> T[scaled_power_hax]
